@@ -1,0 +1,22 @@
+/* 3. Блок, содержащий преимущества хостела инфографикой */
+.advantages-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.advantages__block img {
+    width: 100px;
+    height: 100px;
+}
+
+.advantages__block {
+    width: 250px;
+    transition: var(--t4s);
+}
+
+.advantages__block:hover {
+    transform: scale(1.1);
+}

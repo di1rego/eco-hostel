@@ -1,0 +1,32 @@
+/* 9. Футер с названием хостела и кнопкой, позволяющий забронировать номер */
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--green);
+    padding: 10px;
+    height: 70px;
+}
+
+.footer-wrapper p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer-wrapper button {
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 40px;
+    color: #000;
+    font-size: 13px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.footer-wrapper button:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}

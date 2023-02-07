@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эко-хостел</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 1. Шапка, содержащая логотип, меню и кнопку поиска. -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="source/img/header/logo-blue.png" alt="logo">
+                </div>
+                <input type="checkbox" name="search" id="toggle__menu">
+                <label for="toggle__menu" class="menu__btn">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a href="#main" class="menu__item">Главная</a></li>
+                    <li><a href="#apartments" class="menu__item">Наши номера</a></li>
+                    <li><a href="#hostel" class="menu__item">Фото</a></li>
+                    <li><a href="#reviews" class="menu__item">Отзывы</a></li>
+
+                    <li><a href="#contacts" class="menu__item">Контакты</a></li>
+                    <li><a href="#advantages" class="menu__item">Правила</a></li>
+                    <li><a href="#events" class="menu__item">Наши гости</a></li>
+                    <li><a href="#footer" class="menu__item">Забронировать</a></li>
+                </ul>
+                <form action="#" method="get" class="form__search">
+                    <input type="search" name="search__text" id="search" placeholder="Введите...">
+                    <button type="submit" value="search">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- 2. Блок со слоганом и телефоном -->
+    <main class="main" id="main">
+        <div class="container">
+            <div class="main-wrapper">
+                <div class="main__info">
+                    <h1>ЭКО-ХОСТЕЛ</h1>
+                    <p>Продуманный комфорт. Отдых в спокойствии. Уют. Чистота. Экологичность</p>
+                    <a href="tel:+79095431623">+7 (909) 543 16 23</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 3. Блок, содержащий преимущества хостела инфографикой -->
+    <section class="advantages box" id="advantages">
+        <div class="container">
+            <h2 class="title">Наши премущества</h2>
+            <div class="advantages-wrapper">
+                <div class="advantages__block">
+                    <img src="source/img/advantages/2.png" alt="">
+                    <h3>Мы работаем 24/7</h3>
+                    <p>Мы рады Вас видеть в нашем уютном и комфортабельном хостеле в любое время дня и любой день недели
+                    </p>
+                </div>
+                <div class="advantages__block">
+                    <img src="source/img/advantages/4.png" alt="">
+                    <h3>В самом центре</h3>
+                    <p>за 5-10 минут пешком можно дойти до ГУМа, ЦУМа, набережной и других популярных мест</p>
+                </div>
+                <div class="advantages__block">
+                    <img src="source/img/advantages/1.png" alt="">
+                    <h3>Все, что нужно</h3>
+                    <p>К вашим услугам: постельное белье с полотенцем, пользование общей кухней, стиральной машиной</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Блок, содержащий примеры номеров: фото и описан номеров -->
+    <section class="apartments box" id="apartments">
+        <div class="container">
+            <h2 class="title">Наши номера</h2>
+            <div class="apartments-wrapper">
+                <div class="apartments__block">
+                    <img src="source/img/apartments/image_1.jpg" alt="">
+                    <h3>Комната для компании</h3>
+                    <p>Комната для четырех человек. Две двухуровневые кровати. Эту комнату мы называем еще
+                        "семейной".
+                    </p>
+                </div>
+                <div class="apartments__block">
+                    <img src="source/img/apartments/image_2.jpg" alt="">
+                    <h3>Комната повышенной комфортности</h3>
+                    <p>Комната для одного или двух человек. Двуспальная кровать. В комнате есть холодильник,
+                        микроволновка, чайник, телевизор. Комната укомплектована раковиной.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 5. Слайдер, содержащий фото хостела -->
+    <section id="hostel" class="box">
+        <div class="container">
+            <h2 class="title">Фото хостела</h2>
+            <div class="hostel__slider-wrapper">
+                <div class="hostel__slides">
+                    <input type="radio" name="s" id="slide_1" checked>
+                    <input type="radio" name="s" id="slide_2">
+                    <input type="radio" name="s" id="slide_3">
+                    <input type="radio" name="s" id="slide_4">
+
+                    <div class="hostel__slide"><img src="source/img/hostel/img_1.jpg" alt=""></div>
+                    <div class="hostel__slide"><img src="source/img/hostel/img_2.jpg" alt=""></div>
+                    <div class="hostel__slide"><img src="source/img/hostel/img_3.jpg" alt=""></div>
+                    <div class="hostel__slide"><img src="source/img/hostel/img_4.jpg" alt=""></div>
+
+                    <div class="hostel__slider-nav">
+                        <label for="slide_1" class="hostel__slider-nav__item"></label>
+                        <label for="slide_2" class="hostel__slider-nav__item"></label>
+                        <label for="slide_3" class="hostel__slider-nav__item"></label>
+                        <label for="slide_4" class="hostel__slider-nav__item"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 6. Блок, содержащий контакты: телефон, email, ссылки на социальные сети -->
+    <section class="contacts box" id="contacts">
+        <div class="container">
+            <h2 class="title">Контакты</h2>
+            <div class="contacts-wrapper">
+                <div class="contacts__block">
+                    <a href="tel:+79095431623">+7 (909) 543 16 23</a><br>
+                    <a href="mail:ecohostel.tomsk@mail.ru">ecohostel.tomsk@mail.ru</a>
+                </div>
+                <div class="contacts__social">
+                    <a href="https://www.facebook.com/ecohosteltomsk" target="_blank">
+                        <img src="source/img/contacts/fecebook.png" alt="facebook">
+                    </a>
+                    <a href="https://vk.com/ecohostelvtomske" target="_blank">
+                        <img src="source/img/contacts/vk.png" alt="vk">
+                    </a>
+                    <a href="https://instagram.com/ecohosteltomsk" target="_blank">
+                        <img src="source/img/contacts/instagram.png" alt="instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7. Слайдер с отзывами -->
+    <section id="reviews" class="box">
+        <div class="container">
+
+            <h2 class="title">Отзывы</h2>
+            <div class="reviews__slider-wrapper">
+                <div class="reviews__slides">
+                    <input type="radio" name="s2" id="slide_5" checked>
+                    <input type="radio" name="s2" id="slide_6">
+                    <input type="radio" name="s2" id="slide_7">
+                    <input type="radio" name="s2" id="slide_8">
+                    <input type="radio" name="s2" id="slide_9">
+                    <input type="radio" name="s2" id="slide_10">
+
+                    <div class="reviews__slide">
+                        <img src="source/img/reviews/img_1.png" alt="">
+                        <h3>Артём Кужлев</h3>
+                        <p>23.10.2019 <br> Прекрасно провёл время. Аккуратные, чистые номера и прекрасные хозяева!</p>
+                    </div>
+                    <div class="reviews__slide">
+                        <img src="source/img/reviews/img_2.png" alt="">
+                        <h3>Лана Т.</h3>
+                        <p>14.10.2019 <br> Здравствуйте, Фортуна! Останавливались на ночлег по пути домой с 2 мопсами.
+                            Приветливый администратор, отличные условия проживания. Если снова будем в Симферополе, то
+                            останемся в этом хостеле. Желаем процветания!!!</p>
+                    </div>
+                    <div class="reviews__slide">
+                        <img src="source/img/reviews/img_3.png" alt="">
+                        <h3>Станислав Г.</h3>
+                        <p>25.09.2019 <br> Хороший чистый хостел. Все есть, все на уровне!</p>
+                    </div>
+                    <div class="reviews__slide">
+                        <img src="source/img/reviews/img_4.jpg" alt="">
+                        <h3>Марина</h3>
+                        <p>13.09.2019 <br> Плюсы: Всё прошло отлично. Очень рекомендую эту гостиницу.
+                            Расположение-тихое, место в 10 м от вокзала. На территории есть частная парковка. Номера
+                            большие с комфортабельной кроватью, ортопедическим матрасом. Завтрак вполне приличный</p>
+                    </div>
+                    <div class="reviews__slide">
+                        <img src="source/img/reviews/img_1.png" alt="">
+                        <h3>Юлия</h3>
+                        <p>22.08.2019 <br> Плюсы: Хороший хостел! Чисто , спокойно. Останавливалась на одну ночь .
+                            Встретили с поздним заездом без проблем. Спасибо за все</p>
+                    </div>
+                    <div class="reviews__slide">
+                        <img src="source/img/reviews/img_2.png" alt="">
+                        <h3>Elena Shapenkova</h3>
+                        <p>21.08.2019 <br> Отличный хостел, мега приятный административный персонал!</p>
+                    </div>
+
+                    <div class="slider-nav2">
+                        <label for="slide_5" class="slider-nav__item2"></label>
+                        <label for="slide_6" class="slider-nav__item2"></label>
+                        <label for="slide_7" class="slider-nav__item2"></label>
+                        <label for="slide_8" class="slider-nav__item2"></label>
+                        <label for="slide_9" class="slider-nav__item2"></label>
+                        <label for="slide_10" class="slider-nav__item2"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 8. Блок в виде слайдера, содержащий фото мероприятий хостела с описанием их (по три мероприятия с фото) -->
+    <section id="events" class="box">
+        <div class="container">
+            <h2 class="title">Мероприятия</h2>
+            <div class="slider-wrapper">
+                <div class="events__slides">
+                    <input type="radio" name="s3" id="slide_11" checked>
+                    <input type="radio" name="s3" id="slide_12">
+                    <input type="radio" name="s3" id="slide_13">
+
+                    <div class="events__slide">
+                        <img src="source/img/events/img_1.jpg" alt="">
+                        <p><span>ХОСТЕЛ ЗАКРЫВАЕТСЯ</span> <br> С 1 октября наш хостел перестал принимать гостей в связи
+                            жёстким законом, который был недавно принят. Но мы не бросаем наше дело, ближе к зиме мы
+                            откроем свой хостел, в замечательном красивом историческом месте Томска, еще более
+                            комфортный. Очень хотим видеть вас всех снова, наши дорогие гости. Поэтому не отписывайтесь
+                            от нас в соц. сетях, следите за новостями, нашим ремонтом и открытием. Нам очень нужна ваша
+                            поддержка. До новых встреч. Мы уже скачем.</p>
+                    </div>
+                    <div class="events__slide">
+                        <img src="source/img/events/img_2.jpg" alt="">
+                        <p><span>УЧАСТНИКИ МАРАФОНА "ЯРЧЕ!"</span> <br> В минувшие выходные в нашем городе состоялось
+                            одно из самых масштабных городских мероприятий-международный марафон ЯРЧЕ! И мы вновь
+                            немного прикоснулись к этому событию. Ведь у нас в хостеле гостили участники марафона.</p>
+                    </div>
+                    <div class="events__slide">
+                        <img src="source/img/events/img_3.jpg" alt="">
+                        <p><span>ГОСТИ ИНОСТРАННЫЕ</span> <br> Пока сибирские туристы сидят по домам, за них отдуваются
+                            туристы иностранные. У нас в хостеле одновременно гостили путешественницы из Тайвани и
+                            Малайзии, Англии и турист из Франции. Угощали нас азиатской кухней и русскими пирожными.
+                            Много фотографировали наш хостел, гуляли по морозному Томску и остались в восторге.</p>
+                    </div>
+
+                    <div class="events__slider-nav">
+                        <label for="slide_11" class="events__slider-nav__item"></label>
+                        <label for="slide_12" class="events__slider-nav__item"></label>
+                        <label for="slide_13" class="events__slider-nav__item"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 9. Футер с названием хостела и кнопкой, позволяющий забронировать номер -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <p>Эко-дом</p>
+                <button>Забронировать номер</button>
+            </div>
+        </div>
+    </footer>
+    <!-- 10. Кнопка, позволяющая забронировать номер -->
+    <div class="container">
+        <button class="btn">Забронировать номер</button>
+    </div>
+</body>
+
+</html>

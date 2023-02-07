@@ -1,0 +1,99 @@
+/* Разрешение 1024x1366px и 375x812px */
+@import url("components/header.css");
+@import url("components/main.css");
+@import url("components/advantage.css");
+@import url("components/apartments.css");
+@import url("components/hostel.css");
+@import url("components/contacts.css");
+@import url("components/reviews.css");
+@import url("components/events.css");
+@import url('components/footer.css');
+
+/* Обнуление стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: var(--t4s);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--light);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1em;
+    color: #000;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+:root {
+    --green: #236a4c;
+    --light: #e4dd97;
+    --t4s: all .4s ease;
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.title::before {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 3px;
+    bottom: -5px;
+    left: calc(50% - 125px);
+    background-color: var(--green);
+    border-radius: 1.5px;
+}
+
+/* 10. Кнопка, позволяющая забронировать номер */
+.btn {
+    padding: 5px 10px;
+    background-color: rgba(228, 221, 151, .6);
+    position: fixed;
+    bottom: 0;
+    margin: 0 0 100px 10px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--t4s);
+}
+
+.btn:hover {
+    background-color: rgba(35, 106, 76, .6);
+    color: #fff;
+    text-decoration: underline;
+}
+
+.box {
+    margin: 10px;
+    padding: 70px 0 24px;
+}

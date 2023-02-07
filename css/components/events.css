@@ -1,0 +1,81 @@
+/* 8. Блок в виде слайдера, содержащий фото мероприятий хостела с описанием их (по три мероприятия с фото) */
+.slider-wrapper {
+    width: clamp(250px, 90vw, 800px);
+    height: calc(250px + (500 - 250) * ((100vw - 320px) / (1440 - 320)));
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.events__slides {
+    display: flex;
+}
+
+.events__slides img {
+    width: clamp(250px, 90vw, 800px);
+    height: calc(250px + (500 - 250) * ((100vw - 320px) / (1440 - 320)));
+    object-fit: cover;
+}
+
+.events__slides input[type="radio"] {
+    display: none;
+}
+
+.events__slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--t4s);
+    position: relative;
+}
+
+.events__slide p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: calc(13px + (16 - 13) * ((100vw - 375px) / (1024 - 375)));
+    color: rgba(255, 255, 255, .6);
+}
+
+.events__slide span {
+    color: var(--light);
+    text-decoration: underline;
+}
+
+#slide_11:checked~.events__slide {
+    transform: none;
+}
+
+#slide_12:checked~.events__slide {
+    transform: translateX(-100%);
+}
+
+#slide_13:checked~.events__slide {
+    transform: translateX(-200%);
+}
+
+.events__slider-nav {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+}
+
+.events__slider-nav__item {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, .4);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slide_11:checked~.events__slider-nav label[for="slide_11"],
+#slide_12:checked~.events__slider-nav label[for="slide_12"],
+#slide_13:checked~.events__slider-nav label[for="slide_13"] {
+    background-color: rgba(255, 255, 255, .8);
+}

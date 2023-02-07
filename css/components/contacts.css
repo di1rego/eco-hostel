@@ -1,0 +1,24 @@
+/* 6. Блок, содержащий контакты: телефон, email, ссылки на социальные сети */
+.contacts__social a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px 0 5px;
+    transition: var(--t4s);
+}
+
+.contacts__social a:hover {
+    text-decoration: none;
+}
+
+.contacts__social a img:hover {
+    transform: scale(1.1);
+}
+
+.contacts-wrapper {
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacts__block a {
+    font-size: 19px;
+}

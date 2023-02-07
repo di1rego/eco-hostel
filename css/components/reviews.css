@@ -1,0 +1,86 @@
+/* 7. Слайдер с отзывами */
+.reviews__slider-wrapper {
+    width: clamp(250px, 90vw, 400px);
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.reviews__slides {
+    display: flex;
+    width: 600%;
+    text-align: center;
+}
+
+.reviews__slide {
+    width: 100%;
+    padding: 10px;
+    transition: var(--t4s);
+}
+
+.reviews__slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.reviews__slides input[type="radio"] {
+    display: none;
+}
+
+#slide_5:checked~.reviews__slide {
+    transform: none;
+}
+
+#slide_6:checked~.reviews__slide {
+    transform: translateX(-100%);
+}
+
+#slide_7:checked~.reviews__slide {
+    transform: translateX(-200%);
+}
+
+#slide_8:checked~.reviews__slide {
+    transform: translateX(-300%);
+}
+
+#slide_9:checked~.reviews__slide {
+    transform: translateX(-400%);
+}
+
+#slide_10:checked~.reviews__slide {
+    transform: translateX(-500%);
+}
+
+.slider-nav2 {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+    border: 3px solid #eee;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.slider-nav__item2 {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, .4);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slide_5:checked~.slider-nav2 label[for="slide_5"],
+#slide_6:checked~.slider-nav2 label[for="slide_6"],
+#slide_7:checked~.slider-nav2 label[for="slide_7"],
+#slide_8:checked~.slider-nav2 label[for="slide_8"],
+#slide_9:checked~.slider-nav2 label[for="slide_9"],
+#slide_10:checked~.slider-nav2 label[for="slide_10"] {
+    background-color: rgba(0, 0, 0, .6);
+}
